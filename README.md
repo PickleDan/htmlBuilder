@@ -1,5 +1,6 @@
 # htmlBuilder
 Реализуйте функцию buildHtml, которая возвращает строковое представление html.
+```
 const data = ['html', [
   ['meta', [
     ['title', 'hello, hexlet!'],
@@ -26,3 +27,4 @@ html>
     </div>
   </body>
 </html>
+```
