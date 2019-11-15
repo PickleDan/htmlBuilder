@@ -1,5 +1,4 @@
-import buildNode from './buildNode';
-
+const { buildNode } = require('./buildNode');
 
 const data = ['html', [
   ['meta', { id: 'uniq-key' }, [
@@ -46,4 +45,3 @@ const parse = (data) => {
 
 console.log(parse(data));
 
-export default parse;
