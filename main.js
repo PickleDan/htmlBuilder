@@ -1,4 +1,5 @@
 const { buildNode } = require('./buildNode');
+const util = require('util');
 
 const data = ['html', [
   ['meta', { id: 'uniq-key' }, [
@@ -43,5 +44,10 @@ const parse = (data) => {
   return buildNode(args.name, args.attributes, args.body, args.children);
 };
 
-console.log(parse(data));
 
+
+console.log(util.inspect((parse(data)), {
+  showHidden: false,
+  depth: null,
+  colors: true,
+}));
