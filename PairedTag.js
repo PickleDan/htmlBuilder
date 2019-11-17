@@ -1,4 +1,4 @@
-const Node = require("./Node");
+const { Node } = require("./Node");
 
 function PairedTag(name, attributes, body = "", children = []) {
   Node.apply(this, [name, attributes]);

@@ -1,5 +1,5 @@
-const PairedTag = require("./PairedTag");
-const SingleTag = require("./SingleTag");
+const { PairedTag } = require("./PairedTag");
+const { SingleTag } = require("./SingleTag");
 
 const singleTagsList = new Set(["hr", "br", "img"]);
 const buildNode = (name, ...args) => {
@@ -7,4 +7,4 @@ const buildNode = (name, ...args) => {
   return new C(name, ...args);
 };
 
-module.export = { buildNode };
+module.exports = { buildNode };
